@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Area do Titulo da pagina -->
     <TextView
         android:id="@+id/tituloTv"
         android:layout_width="match_parent"
@@ -22,15 +23,16 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
+    <!-- Area do nome -->
+
     <TextView
         android:id="@+id/nomeCompletoTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Nome Completo"
-        android:textSize="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/tituloTv"
-        tools:layout_editor_absoluteX="16dp" />
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTv"/>
 
     <EditText
         android:id="@+id/nomeCompletoEt"
@@ -38,13 +40,167 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/nomeCompletoTv"
         android:text="Digite seu nome"
-        android:padding="10dp"
+        android:padding="8dp"
         android:inputType="textPersonName"
         android:background="android:color/white"
         android:backgroundTint="@android:color/black"
         android:backgroundTintMode="src_in"
         android:layout_margin="16dp" />
 
+    <!-- Area do telefone -->
+    <TextView
+        android:id="@+id/telefoTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTo="4dp"
+        android:text="Telefone"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/nomeCompletoEt"/>
 
+    <EditText
+        android:id="@+id/telefoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/telefoTv"
+        android:padding="8dp"
+        android:background="android:color/white"
+        android:backgroundTint="@android:color/black"
+        android:backgroundTintMode="src_in"
+        android:layout_margin="8dp" />/>
+
+    <!-- Area do e-mail -->
+    <TextView
+        android:id="@+id/emailTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/telefoneEt"
+        android:text="E-mail"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emailTv"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:background="android:color/white"
+        android:backgroundTint="@android:color/black"
+        android:backgroundTintMode="src_in"
+        android:layout_margin="8dp" />
+
+        <!-- Checkbox de ingressar  na lista de email -->
+    <CheckBox
+        android:id="@+id/listaEmailCb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingressar na lista de e-mail?"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/emailEt"/>
+
+    <!-- Area de definição de sexo - RadioGroup -->
+    <TextView
+        android:id="@+id/sexoTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/listaEmailCb"
+        android:text="Sexo"
+        android:textSize="16sp"
+        android:layout_marginTop="8sp" />
+
+    <RadioGroup
+        android:id="@+id/sexoRg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sexoTv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/masculinoRb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:layout_marginRight="30dp"/>
+
+        <RadioButton
+            android:id="@+id/femininoRb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feminino" />
+
+    </RadioGroup>
+
+    <!-- Area text inpu cidade -->
+    <TextView
+        android:id="@+id/cidadeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sexoRg"
+        android:text="Cidade"
+        android:textSize="16sp"
+        android:layout_marginTop="8sp" />
+
+    <EditText
+        android:id="@+id/cidadeEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cidadeTv"
+        android:inputType="text"
+        android:padding="8dp"
+        android:background="android:color/white"
+        android:backgroundTint="@android:color/black"
+        android:backgroundTintMode="src_in"
+        android:layout_margin="8dp" />
+
+    <!-- area UF -->
+    <TextView
+        android:id="@+id/ufTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cidadeEt"
+        android:text="UF"
+        android:textSize="16sp"
+        android:layout_marginTop="8sp" />
+
+    <Spinner
+        android:id="@+id/ufSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        app:layout_constraintTop_toBottomOf="@id/cidadeEt">
+<!--
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+ -->
+    </Spinner>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
