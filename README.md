@@ -43,7 +43,7 @@ Este projeto foi uma excelente oportunidade para reforçar meus conhecimentos em
 Se tiver alguma dúvida, sugestão ou apenas quiser conversar sobre desenvolvimento Android, sinta-se à vontade para entrar em contato comigo:
 
 **Eduardo Duarte Derisso**  
-📧 [duarte.derisso@gmail.com](mailto:duarte.Eduardo Duarte Derisso---
+📧 [duarte.derisso@gmail.com](mailto:duarte.Eduardo Duarte Derisso---)
 
->duarte.derisso@gmail.comalho pessoal e serve como exemplo prático para estudos e aprimoramento de habilidades no desenvolvimento Android.*
+>duarte.derisso@gmail.com Esse projeto pessoal serve como exemplo prático para estudos e aprimoramento de habilidades no desenvolvimento Android.*
 
