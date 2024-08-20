@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Cadastro</string>
     <string-array name="uf_array">
+        <item></item>
         <item>AC</item>
         <item>AL</item>
         <item>AP</item>
